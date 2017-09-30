@@ -9,6 +9,7 @@ import { EventComponent } from './components/event/event.component';
 import { GroupComponent } from './components/group/group.component';
 
 import { EventsService } from './services/events.service';
+import { GroupService } from './services/group.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EventsService } from './services/events.service';
     HttpModule,
     routing
   ],
-  providers: [EventsService],
+  providers: [EventsService,
+              GroupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
